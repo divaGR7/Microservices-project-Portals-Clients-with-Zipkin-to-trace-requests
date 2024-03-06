@@ -30,7 +30,7 @@ public class PortalController {
         return ResponseEntity.ok(portalService.findAllPortals());
     }
 
-    @GetMapping("/school/{id}")
+    @GetMapping("/client/{id}")
     public ResponseEntity<List<Portal>> findAllPortals(@PathVariable("id") Integer id) {
         return ResponseEntity.ok(portalService.findAllPortalsByClientId(id));
     }

@@ -32,7 +32,7 @@ public class ClientController {
         return ResponseEntity.ok(clientService.findAllClients());
     }
 
-    @GetMapping("/with-client/{clientId}")
+    @GetMapping("/with-portals/{clientId}")
     public ResponseEntity<FullClientResponse> findAllClients(
 
             @PathVariable("clientId") Integer clientId){
